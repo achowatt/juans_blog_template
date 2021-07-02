@@ -11,11 +11,7 @@
     </head>
     <body>
         <h1>Helloooo</h1>
-        <h2>My first post</h2>
-<h3> Fri Apr 24 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h3>
-<img src="/images/uploads/random_img.png" alt="My first post"></img>
-<p><p>Hello, here is the body of the post.</p>
-</p>
+        {{content | safe}}
 
         <script>
         if (window.netlifyIdentity) {
