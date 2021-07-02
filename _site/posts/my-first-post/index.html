@@ -6,6 +6,7 @@
         <title>Juans Blog</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <link rel="stylesheet" href="">
     </head>
     <body>
@@ -15,5 +16,17 @@
 <img src="/images/uploads/random_img.png" alt="My first post"></img>
 <p><p>Hello, here is the body of the post.</p>
 </p>
+
+        <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+        </script>
     </body>
 </html>
