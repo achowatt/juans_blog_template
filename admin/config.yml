@@ -12,20 +12,12 @@ collections:
     fields:
       - {
           label: "Layout",
-          name: "post.data.layout",
+          name: "layout",
           widget: "hidden",
           default: "layouts/post.njk",
         }
-      - { label: "Title", name: "post.data.title", widget: "string" }
-      - {
-          label: "Description",
-          name: "post.data.description",
-          widget: "string",
-        }
-      - { label: "Date", name: "post.data.date", widget: "date", default: "" }
-      - { label: "Post Body", name: "post.data.body", widget: "markdown" }
-      - {
-          label: "Featured Image",
-          name: "post.data.featuredImage",
-          widget: "image",
-        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "date", default: "" }
+      - { label: "Post Body", name: "body", widget: "markdown" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
